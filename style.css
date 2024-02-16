@@ -1,0 +1,478 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background: rgba(242, 242, 242, 0.6);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-image: linear-gradient(to bottom, #514a9d 0%, #24c6dc 100%);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 500;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.navbar a:hover {
+  color: #f8d800;
+  border-bottom: 3px solid #f8d800;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+  height: 100vh;
+  background: #151515
+    url("https://media.istockphoto.com/id/1363276603/photo/concentrated-male-student-sitting-alone-in-college-informatics-room-working-late-evenings-on.jpg?s=612x612&w=0&k=20&c=pOqTiuVFCavPUxaY7m1w0nw1Np0KqNg7GL852UQQdMM=")
+    no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron-text {
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.jumbotron-text h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: "Protest Riot", sans-serif;
+  letter-spacing: 3px;
+}
+
+.jumbotron-text p {
+  color: #fff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.jumbotron-text span {
+  color: #f8d800;
+}
+
+.cursor {
+  position: absolute;
+  top: 48%;
+  height: 25px;
+  width: 2px;
+  background-color: #ff0077;
+  font-weight: 700;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*SOCIAL LINKS*/
+.jumbotron-social {
+  margin-top: 10px;
+}
+.ul-social {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-social-links {
+  display: inline-block;
+  list-style: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #242424;
+  margin-right: 20px;
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: -11px;
+  right: -10px;
+  font-size: 1.6em;
+  color: white;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.li-social-links:hover {
+  background-color: #df036a;
+}
+
+.jumbotron .buttonDiv {
+  margin: 20px auto 0;
+}
+
+.jumbotron .buttonDiv button {
+  background-color: #2dc28e;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.jumbotron .buttonDiv button:hover {
+  background-color: #fff;
+  color: #2dc28e;
+}
+
+/*ARROW LINK*/
+#down-arrow {
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#down-arrow a {
+  color: white;
+}
+
+/*CONTENT*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.white {
+  background: white;
+}
+
+.side-content {
+  flex: 0 0 16.6%;
+}
+
+.main-content {
+  flex: 0 0 66.6%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.side-content-sm {
+  flex: 0 0 10%;
+}
+
+.main-content-lg {
+  flex: 0 0 80%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #002661;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-body {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  color: #333;
+}
+
+/*EDUCATION*/
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  background-color: #25323e;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-content {
+  padding: 0.25rem 1.25rem;
+  flex: 1 1 auto;
+  background-color: #fcfccf;
+  color: #333;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Poppins", "sans-serif";
+}
+
+.time {
+  float: right;
+}
+
+.card-experience {
+  background-color: #09203a;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.card-content-experience {
+  color: #fff;
+}
+
+.card-content-experience h3 {
+  color: #12d640;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.card-content-experience p:first-of-type {
+  font-family: "Poppins", "sans-serif";
+  margin-top: 10px;
+}
+
+.card-content-experience p:last-of-type {
+  font-style: italic;
+  font-family: "Poppins", "sans-serif";
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.card-content-experience ul {
+  margin-top: -10px;
+}
+
+/*PROJECTS*/
+.project-container {
+  width: 80%;
+  margin: 0 auto 80px;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-item img {
+  width: 300px;
+  height: 200px;
+  display: block;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item:hover .overlay {
+  left: 0;
+}
+
+.overlay-content {
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-content button {
+  border: none;
+  padding: 7px 12px;
+  background-image: linear-gradient(to right, #0137c0, #0096ff);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.grid-item:hover .overlay .overlay-content {
+  opacity: 1;
+}
+
+.overlay-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.overlay-content p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #aa076b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.active-filter-button {
+  background-color: #222;
+}
+
+/*SKILLS*/
+.skills {
+  width: 80%;
+  margin: 0px auto 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skill {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+/*CONTACT*/
+.contact {
+  width: 80%;
+  margin: 0px auto 100px;
+  padding: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.contact .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact .contact-info .info-item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #022b52;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-info .info-item .contact-icons {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.218);
+  position: relative;
+}
+
+.contact .contact-info .info-item .contact-icons i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.contact .contact-info .info-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #12d640;
+}
+.contact .contact-info .info-item p {
+  font-size: 16px;
+  color: #fff;
+}
